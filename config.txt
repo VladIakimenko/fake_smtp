@@ -1,0 +1,10 @@
+# APP_EMAIL_BACKEND=django.core.mail.backends.console.EmailBackend      # can be used to directly output mails to terminal
+
+EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend
+EMAIL_HOST=localhost                # Use the service/container name as the host if connecting from another Docker service. Use 'localhost' if connecting from the host machine.
+EMAIL_PORT=1025
+EMAIL_HOST_USER=
+EMAIL_HOST_PASSWORD=
+EMAIL_USE_TLS=False                 
+EMAIL_USE_SSL=False                 
+FROM_EMAIL=sample@example.com
